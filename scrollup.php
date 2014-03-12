@@ -14,10 +14,8 @@ function scrollup_plugin_scripts() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('scrool_up_custom_scrollUp',plugins_url( '/js/jquery.scrollUp.min.js' , __FILE__ ),array( 'jquery' ));
 	wp_enqueue_script('scrool_up_custom_easing',plugins_url( '/js/jquery.easing.min.js' , __FILE__ ),array( 'jquery' ));
-	wp_enqueue_script('scrool_up_tooltip_plugin',plugins_url( '/js/tooltip.js' , __FILE__ ),array( 'jquery' ));
 
 	wp_enqueue_style('scrool_up_custom_style',plugins_url( '/css/scrollup.css' , __FILE__ ));
-	wp_enqueue_style('scrool_up_tooltip_style',plugins_url( '/css/tooltip.css' , __FILE__ ));
 
 }
 add_action('init', 'scrollup_plugin_scripts');
@@ -47,20 +45,6 @@ function scrollup_active_hook() {
 
 }
 add_action('wp_footer', 'scrollup_active_hook');
-function scrollup_tooltip_active_hook() {
 
-	?><script type="text/javascript">
-jQuery(function(){
-    jQuery("#scrollUp").tooltip({
-        title 	  	: 'It works in absence of title attribute.',
-        animation 	: true,
-        placement 	: 'auto', // top | bottom | left | right | auto.
-        trigger		: 'hover',	//click | hover | focus | manual.
-        delay		: { show: 400, hide: 100 }
-    });
-});
-	</script><?php
-
-}
-add_action('wp_footer', 'scrollup_tooltip_active_hook');
 ?>
+

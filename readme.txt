@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: sayful
+Contributors: sayful Islam
 Tags:  arrow, navigation, scroll, scroll up, top, scrollup-master, back to top
 Requires at least: 2.9.2
 Tested up to: 3.8.1
@@ -15,7 +15,7 @@ Fully written in jQuery, the plugin adds a floating navigation button right bott
 
 == Installation ==
 
-1.Extract the zip file and just drop the contents in the wp-content/plugins/ directory.
+1.Extract the zip file and just drop the contents in the wp-content/plugins/ directory.<br/>
 2.Activate the Plugin from Plugins page.
 
 == Screenshots ==
@@ -30,12 +30,12 @@ Implementation of basic functionality.
 
 == CREDIT ==
 
-1.This plugin was developed by Sayful Islam - http://sis.netai.net
+1.This plugin was developed by Sayful Islam - http://sis.netai.net <br/>
 2.Some open source framework have been used. For detail visit at https://github.com/markgoodyear/scrollup
 
 == CONTACT ==
 
-Rafael Cirolini
+Sayful Islam
 http://www.sis.netai.net
 http://www.sayful1.wordpress.com
 
