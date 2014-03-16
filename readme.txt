@@ -7,7 +7,7 @@ Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This is just a very simple plugin to have a unified \"scroll to top"\ button throughout your whole blog. Juste install the plugin a \"scroll to top"\ button will appear at right bottom of your blog.
+This is just a very simple plugin to have a unified "scroll to top" button throughout your whole blog. Juste install the plugin a "scroll to top" button will appear at right bottom of your blog.
 
 == Description ==
 
