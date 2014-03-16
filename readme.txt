@@ -15,7 +15,8 @@ Fully written in jQuery, the plugin adds a floating navigation button right bott
 
 == Installation ==
 
-1.Extract the zip file and just drop the contents in the wp-content/plugins/ directory.<br/>
+1.Extract the zip file and just drop the contents in the wp-content/plugins/ directory.
+
 2.Activate the Plugin from Plugins page.
 
 == Screenshots ==
@@ -30,14 +31,13 @@ Implementation of basic functionality.
 
 == CREDIT ==
 
-1.This plugin was developed by Sayful Islam - http://sis.netai.net <br/>
-2.Some open source framework have been used. For detail visit at https://github.com/markgoodyear/scrollup
+1.This plugin was developed by [Sayful Islam](http://sis.netai.net)
+
+2.Some open source framework have been used. For detail visit [here](https://github.com/markgoodyear/scrollup)
 
 == CONTACT ==
 
-Sayful Islam
-http://www.sis.netai.net
-http://www.sayful1.wordpress.com
+[Sayful Islam](http://www.sis.netai.net)
 
 
 
