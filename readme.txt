@@ -46,6 +46,7 @@ You should upgrade the plugin to get more function and faster speed.
 == CREDIT ==
 
 1.This plugin was developed by [Sayful Islam](http://sis.netai.net)
+
 2.Some open source framework have been used. For detail visit [here](https://github.com/markgoodyear/scrollup)
 
 == CONTACT ==
