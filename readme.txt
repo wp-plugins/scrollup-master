@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== scrollup-master ===
 Contributors: sayful Islam
 Tags:  arrow, navigation, scroll, scroll up, top, scrollup-master, back to top
 Requires at least: 2.9.2
@@ -7,7 +7,7 @@ Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This is just a very simple plugin to have a unified "scroll to top" button throughout your whole blog. Juste install the plugin a "scroll to top" button will appear at right bottom of your blog.
+This is just a very simple plugin to have a unified \"scroll to top"\ button throughout your whole blog. Juste install the plugin a \"scroll to top"\ button will appear at right bottom of your blog.
 
 == Description ==
 
@@ -31,15 +31,10 @@ Implementation of basic functionality.
 
 == CREDIT ==
 
-1.This plugin was developed by Sayful Islam - http://sis.netai.net
+1.This plugin was developed by [Sayful Islam](http://sis.netai.net)
 
-2.Some open source framework have been used. For detail visit at https://github.com/markgoodyear/scrollup
+2.Some open source framework have been used. For detail visit [here](https://github.com/markgoodyear/scrollup)
 
 == CONTACT ==
 
-Sayful Islam
-http://www.sis.netai.net
-
-
-
-
+[Sayful Islam](http://www.sis.netai.net)
