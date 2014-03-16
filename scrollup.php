@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/plugins/scrollup-master/
 Description: This plugin is for wordpress to create scroll to top button.
 Version: 1.0.0
 Author: Sayful Islam
-Author URI: http://sayful1.wordpress.com
+Author URI: http://sis.netai.net
 License: GPLv2 or later
 */
 
