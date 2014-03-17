@@ -16,8 +16,7 @@ Fully written in jQuery, the plugin adds a floating navigation button right bott
 == Installation ==
 
 1.Extract the zip file and just drop the contents in the wp-content/plugins/ directory.
-
-2.Activate the Plugin from Plugins page.
+1.Activate the Plugin from Plugins page.
 
 You will find 'scrollup' menu in your WordPress Settings panel.
 
@@ -33,9 +32,8 @@ Do you have questions or issues with scrollup-master? [Contact Me](http://sis.ne
 == Changelog ==
 
 = version 2.0 =
-1.More lighter than previous version.
-
-2.New option page has been included where you can change default easing effect, scroll speed, scroll distance, hover title.
+* More lighter than previous version.
+* New option page has been included where you can change default easing effect, scroll speed, scroll distance, hover title.
 
 = version 1.0 =
 Implementation of basic functionality.
@@ -46,7 +44,7 @@ You should upgrade the plugin to get more function and faster speed.
 == CREDIT ==
 
 1.This plugin was developed by [Sayful Islam](http://sis.netai.net)
-2.Some open source framework have been used. For detail [click here](https://github.com/markgoodyear/scrollup)
+1.Some open source framework have been used. For detail [click here](https://github.com/markgoodyear/scrollup)
 
 == CONTACT ==
 
