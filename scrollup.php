@@ -3,7 +3,7 @@
 Plugin Name: scrollup-master
 Plugin URI: http://wordpress.org/plugins/scrollup-master/
 Description: This plugin is for wordpress to create scroll to top button.
-Version: 2.0
+Version: 2.1
 Author: Sayful Islam
 Author URI: http://sis.netai.net
 License: GPLv2 or later
@@ -71,7 +71,7 @@ function scrollup_master_settings_page(){
 	?>
 <div id="wpbody">
 	<div class="wrap">
-		<h2>Scrollup Settings</h2>
+		<h2><?php _e('Scrollup Settings') ?></h2>
 		<form action="options.php" method="post">
 			<?php settings_fields( 'scrollup-master-settings-group' ); ?>
 			<?php do_settings_sections( 'scrollup-master-settings-group' ); ?>
@@ -79,62 +79,71 @@ function scrollup_master_settings_page(){
 				<tbody>
 					<tr valign="top">
 						<th scope="row">
-							<label for="scrollup_master_tooltiptitle">Scrollup Tooltip Title</label>
+							<label for="scrollup_master_tooltiptitle"><?php _e('Scrollup Tooltip Title') ?></label>
 						</th>
 						<td>
-							<input type="text" name="scrollup_master_tooltiptitle" id="scrollup_master_tooltiptitle" value="<?php echo get_option('scrollup_master_tooltiptitle'); ?>" class="">
-							<p class="description">Set a custom title if required. This title will show when you put your mouse pointer on scrollup button. Defaults title is 'Scroll to top'</p>
+							<input type="text" name="scrollup_master_tooltiptitle" id="scrollup_master_tooltiptitle" value="<?php echo get_option('scrollup_master_tooltiptitle'); ?>" class="" placeholder="Scroll to top">
+							<p class="description"><?php _e('Set a custom title if required. This title will show when you put your mouse pointer on scrollup button. Defaults title is &lsquo; Scroll to top &lsquo;') ?></p>
 						</td>
 					</tr>
 					<tr valign="top">
 						<th scope="row">
-							<label for="scrollup_master_tooltipeasingtype">Easing Effect Type</label>
+							<label for="scrollup_master_tooltipeasingtype"><?php _e('Easing Effect Type') ?></label>
 						</th>
 						<td>
 							<select name="scrollup_master_tooltipeasingtype" id="">
-								<option value="linear" <?php if(get_option('scrollup_master_tooltipeasingtype') == "linear"){  _e('selected');}?> >linear</option>
-								<option value="easeInExpo" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInExpo"){  _e('selected');}?> >easeInExpo</option>
-								<option value="easeOutExpo" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeOutExpo"){  _e('selected');}?> >easeOutExpo</option>
-								<option value="easeInOutExpo" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInOutExpo"){  _e('selected');}?> >easeInOutExpo</option>
-								<option value="easeInQuart" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInQuart"){  _e('selected');}?> >easeInQuart</option>
-								<option value="easeOutQuart" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeOutQuart"){  _e('selected');}?> >easeOutQuart</option>
-								<option value="easeInOutQuart" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInOutQuart"){  _e('selected');}?> >easeInOutQuart</option>
-								<option value="easeInCirc" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInCirc"){  _e('selected');}?> >easeInCirc</option>
-								<option value="easeOutCirc" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeOutCirc"){  _e('selected');}?> >easeOutCirc</option>
-								<option value="easeInOutCirc" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInOutCirc"){  _e('selected');}?> >easeInOutCirc</option>
+								<option value="linear" <?php if(get_option('scrollup_master_tooltipeasingtype') == "linear"){  _e('selected');}?> ><?php _e('linear') ?></option>
+								<option value="easeInExpo" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInExpo"){  _e('selected');}?> ><?php _e('easeInExpo') ?></option>
+								<option value="easeOutExpo" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeOutExpo"){  _e('selected');}?> ><?php _e('easeOutExpo') ?></option>
+								<option value="easeInOutExpo" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInOutExpo"){  _e('selected');}?> ><?php _e('easeInOutExpo') ?></option>
+								<option value="easeInQuart" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInQuart"){  _e('selected');}?> ><?php _e('easeInQuart') ?></option>
+								<option value="easeOutQuart" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeOutQuart"){  _e('selected');}?> ><?php _e('easeOutQuart') ?></option>
+								<option value="easeInOutQuart" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInOutQuart"){  _e('selected');}?> ><?php _e('easeInOutQuart') ?></option>
+								<option value="easeInCirc" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInCirc"){  _e('selected');}?> ><?php _e('easeInCirc') ?></option>
+								<option value="easeOutCirc" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeOutCirc"){  _e('selected');}?> ><?php _e('easeOutCirc') ?></option>
+								<option value="easeInOutCirc" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInOutCirc"){  _e('selected');}?> ><?php _e('easeInOutCirc') ?></option>
+								<option value="easeInBounce" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInBounce"){  _e('selected');}?> ><?php _e('easeInBounce') ?></option>
+								<option value="easeOutBounce" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeOutBounce"){  _e('selected');}?> ><?php _e('easeOutBounce') ?></option>
+								<option value="easeInOutBounce" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInOutBounce"){  _e('selected');}?> ><?php _e('easeInOutBounce') ?></option>
+								<option value="easeInElastic" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInElastic"){  _e('selected');}?> ><?php _e('easeInElastic') ?></option>
+								<option value="easeOutElastic" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeOutElastic"){  _e('selected');}?> ><?php _e('easeOutElastic') ?></option>
+								<option value="easeInOutElastic" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInOutElastic"){  _e('selected');}?> ><?php _e('easeInOutElastic') ?></option>
+								<option value="easeInBack" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInBack"){  _e('selected');}?> ><?php _e('easeInBack') ?></option>
+								<option value="easeOutBack" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeOutBack"){  _e('selected');}?> ><?php _e('easeOutBack') ?></option>
+								<option value="easeInOutBack" <?php if(get_option('scrollup_master_tooltipeasingtype') == "easeInOutBack"){  _e('selected');}?> ><?php _e('easeInOutBack') ?></option>
 							</select>
-							<p class="description">Select Scroll to top easing effect type. Default easing effect is linear. <a target="_blank" href="http://www.easings.net/">Easing Effect type live view</a></p>
+							<p class="description"><?php _e('Select Scroll to top easing effect type. Default easing effect is linear. <a target="_blank" href="http://www.easings.net/">Easing Effect type live view</a>') ?></p>
 						</td>
 					</tr>
 					<tr valign="top">
 						<th scope="row">
-							<label for="scrollup_master_animation">Scrollup Button Animations</label>
+							<label for="scrollup_master_animation"><?php _e('Scrollup Button Animations') ?></label>
 						</th>
 						<td>
 							<select name="scrollup_master_animation" id="">
-								<option value="fade" <?php if(get_option('scrollup_master_animation') == "fade"){  _e('selected');}?> >Fade</option>
-								<option value="slide" <?php if(get_option('scrollup_master_animation') == "slide"){  _e('selected');}?> >Slide</option>
-								<option value="none" <?php if(get_option('scrollup_master_animation') == "none"){  _e('selected');}?> >None</option>
+								<option value="fade" <?php if(get_option('scrollup_master_animation') == "fade"){  _e('selected');}?> ><?php _e('Fade') ?></option>
+								<option value="slide" <?php if(get_option('scrollup_master_animation') == "slide"){  _e('selected');}?> ><?php _e('Slide') ?></option>
+								<option value="none" <?php if(get_option('scrollup_master_animation') == "none"){  _e('selected');}?> ><?php _e('None') ?></option>
 							</select>
-							<p class="description">Select scrollup button animation type. Default animation type is 'Fade' .</a></p>
+							<p class="description"><?php _e('Select scrollup button animation type. Default animation type is &lsquo; Fade &lsquo; ') ?></a></p>
 						</td>
 					</tr>
 					<tr valign="top">
 						<th scope="row">
-							<label for="scrollup_master_scrollspeed">Scroll Speed</label>
+							<label for="scrollup_master_scrollspeed"><?php _e('Scroll Speed') ?></label>
 						</th>
 						<td>
-							<input type="text" name="scrollup_master_scrollspeed" id="scrollup_master_scrollspeed" value="<?php echo get_option('scrollup_master_scrollspeed'); ?>" class="">
-							<p class="description">Speed back to top in millisecond. Default speed is '300' millisecond.</p>
+							<input type="text" name="scrollup_master_scrollspeed" id="scrollup_master_scrollspeed" value="<?php echo get_option('scrollup_master_scrollspeed'); ?>" class="" placeholder="300">
+							<p class="description"><?php _e('Speed back to top in millisecond. Default speed is &lsquo; 300 &lsquo; millisecond ') ?></p>
 						</td>
 					</tr>
 					<tr valign="top">
 						<th scope="row">
-							<label for="scrollup_master_scrolldistance">Scroll Distance</label>
+							<label for="scrollup_master_scrolldistance"><?php _e('Scroll Distance') ?></label>
 						</th>
 						<td>
-							<input type="text" name="scrollup_master_scrolldistance" id="scrollup_master_scrolldistance" value="<?php echo get_option('scrollup_master_scrolldistance'); ?>" class="">
-							<p class="description">Distance from top/bottom before showing element pixels. Default distance is '300' pixels.</p>
+							<input type="text" name="scrollup_master_scrolldistance" id="scrollup_master_scrolldistance" value="<?php echo get_option('scrollup_master_scrolldistance'); ?>" class="" placeholder="300">
+							<p class="description"><?php _e('Distance from top/bottom before showing element pixels. Default distance is &lsquo; 300 &lsquo; pixels ') ?></p>
 						</td>
 					</tr>
 				</tbody>
