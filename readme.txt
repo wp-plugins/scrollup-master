@@ -16,6 +16,7 @@ Fully written in jQuery, the plugin adds a floating navigation button right bott
 == Installation ==
 
 1. Extract the zip file and just drop the contents in the wp-content/plugins/ directory.
+
 1. Activate the Plugin from Plugins page.
 
 You will find 'scrollup-master' menu in your WordPress Settings panel. You can change default settings from here.
@@ -47,6 +48,7 @@ You should upgrade the plugin to get more function and faster speed.
 == CREDIT ==
 
 1. This plugin was developed by [Sayful Islam](http://sis.netai.net)
+
 1. Some open source framework have been used. For detail [click here](https://github.com/markgoodyear/scrollup)
 
 == CONTACT ==
