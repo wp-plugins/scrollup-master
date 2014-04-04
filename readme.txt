@@ -1,6 +1,6 @@
 === scrollup-master ===
 Contributors: sayful
-Tags:  arrow, navigation, scroll, scroll up, top, scrollup-master, back to top, scroll to top
+Tags:  scroll to top, arrow, navigation, scroll up, top, scrollup-master, back to top
 Requires at least: 2.9.2
 Tested up to: 3.8.1
 Stable tag: 2.1
