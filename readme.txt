@@ -1,9 +1,9 @@
 === scrollup-master ===
 Contributors: sayful
 Tags:  scroll to top, arrow, navigation, scroll up, top, scrollup-master, back to top
-Requires at least: 2.9.2
-Tested up to: 3.8.1
-Stable tag: 2.1
+Requires at least: 2.9
+Tested up to: 3.8.2
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,10 @@ Do you have questions or issues with scrollup-master? [Contact Me](http://sis.ne
 1. Screenshot-3
 
 == Changelog ==
+
+= version 2.2 =
+* Three new options have been added.
+* You can change button size and button position.
 
 = version 2.1 =
 * Nine new easing-effects have been added.

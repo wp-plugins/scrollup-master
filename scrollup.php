@@ -3,7 +3,7 @@
 Plugin Name: scrollup-master
 Plugin URI: http://wordpress.org/plugins/scrollup-master/
 Description: This plugin is for wordpress to create scroll to top button.
-Version: 2.1
+Version: 2.2
 Author: Sayful Islam
 Author URI: http://sis.netai.net
 License: GPLv2 or later
@@ -38,9 +38,24 @@ function scrollup_active_hook() {
 
 }
 add_action('wp_footer', 'scrollup_active_hook');
+function scrollup_custom_style(){
+	?><style>
+		#scrollUp {
+			bottom: <?php echo strlen(trim(get_option("scrollup_master_btn_bottom")))>0?trim(get_option("scrollup_master_btn_bottom")):'20px'?>;
+			right: <?php echo strlen(trim(get_option("scrollup_master_btn_right")))>0?trim(get_option("scrollup_master_btn_right")):'20px'?>;
+			height: <?php echo strlen(trim(get_option("scrollup_master_img_size")))>0?trim(get_option("scrollup_master_img_size")):'40px'?>;  /* Height of image */
+			width: <?php echo strlen(trim(get_option("scrollup_master_img_size")))>0?trim(get_option("scrollup_master_img_size")):'40px'?>; /* Width of image */
+			background-size: <?php echo strlen(trim(get_option("scrollup_master_img_size")))>0?trim(get_option("scrollup_master_img_size")):'40px'?>;
+		}
+	</style><?php
+}
+add_action('wp_head','scrollup_custom_style');
 
 //register our settings.
 function register_scrollup_settings(){
+	register_setting('scrollup-master-settings-group','scrollup_master_btn_bottom');
+	register_setting('scrollup-master-settings-group','scrollup_master_btn_right');
+	register_setting('scrollup-master-settings-group','scrollup_master_img_size');
 	register_setting('scrollup-master-settings-group','scrollup_master_tooltiptitle');
 	register_setting('scrollup-master-settings-group','scrollup_master_tooltipeasingtype');
 	register_setting('scrollup-master-settings-group','scrollup_master_scrollspeed');
@@ -51,6 +66,9 @@ add_action( 'admin_init', 'register_scrollup_settings' );
 
 // function to be run when the plugin is activated.
 function scrollup_master_activation() {
+	add_option('scrollup_master_btn_bottom','20px');
+	add_option('scrollup_master_btn_right','20px');
+	add_option('scrollup_master_img_size','40px');
 	add_option('scrollup_master_tooltiptitle','Scroll to top');
 	add_option('scrollup_master_tooltipeasingtype','linear');
 	add_option('scrollup_master_scrollspeed',300);
@@ -77,6 +95,33 @@ function scrollup_master_settings_page(){
 			<?php do_settings_sections( 'scrollup-master-settings-group' ); ?>
 			<table class="form-table">
 				<tbody>
+					<tr valign="top">
+						<th scope="row">
+							<label for="scrollup_master_btn_bottom"><?php _e('Button Position from Bottom') ?></label>
+						</th>
+						<td>
+							<input type="text" name="scrollup_master_btn_bottom" id="scrollup_master_btn_bottom" value="<?php echo get_option('scrollup_master_btn_bottom'); ?>" class="" placeholder="20px">
+							<p class="description"><?php _e('Set button position from bottom. Defaults position is &lsquo; 20px &lsquo;') ?></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<th scope="row">
+							<label for="scrollup_master_btn_right"><?php _e('Button Position from Right') ?></label>
+						</th>
+						<td>
+							<input type="text" name="scrollup_master_btn_right" id="scrollup_master_btn_right" value="<?php echo get_option('scrollup_master_btn_right'); ?>" class="" placeholder="20px">
+							<p class="description"><?php _e('Set button position from right. Defaults position is &lsquo; 20px &lsquo;') ?></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<th scope="row">
+							<label for="scrollup_master_img_size"><?php _e('Button Image Size') ?></label>
+						</th>
+						<td>
+							<input type="text" name="scrollup_master_img_size" id="scrollup_master_img_size" value="<?php echo get_option('scrollup_master_img_size'); ?>" class="" placeholder="40px">
+							<p class="description"><?php _e('Set button image height and width size. Defaults size is &lsquo; 40px &lsquo;') ?></p>
+						</td>
+					</tr>
 					<tr valign="top">
 						<th scope="row">
 							<label for="scrollup_master_tooltiptitle"><?php _e('Scrollup Tooltip Title') ?></label>

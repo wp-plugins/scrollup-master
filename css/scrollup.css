@@ -1,11 +1,6 @@
 /* Image style */
 #scrollUp {
-	bottom: 20px;
-	right: 20px;
-	height: 40px;  /* Height of image */
-	width: 40px; /* Width of image */
 	background: url(../img/back-top.png) no-repeat;
-	background-size: 40px 40px;
 	opacity: 0.3;
 }
 #scrollUp:hover{opacity: 1;}
