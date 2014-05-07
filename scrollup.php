@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: scrollup-master
+Plugin Name: SIS Scroll to Top
 Plugin URI: http://wordpress.org/plugins/scrollup-master/
 Description: This plugin is for wordpress to create scroll to top button.
 Version: 2.2
