@@ -22,7 +22,7 @@ Fully written in jQuery, the plugin adds a floating navigation button right bott
 You will find 'scrollup-master' menu in your WordPress Settings panel. You can change default settings from here.
 
 == Frequently Asked Questions ==
-Do you have questions or issues with scrollup-master? [Contact Me](http://sis.netai.net)
+Do you have questions or issues with scrollup-master? [Ask for support here](http://wordpress.org/support/plugin/scrollup-master)
 
 == Screenshots ==
 
