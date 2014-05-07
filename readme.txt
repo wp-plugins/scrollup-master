@@ -15,20 +15,35 @@ Fully written in jQuery, the plugin adds a floating navigation button right bott
 
 == Installation ==
 
-1. Extract the zip file and just drop the contents in the wp-content/plugins/ directory.
+Installing the plugins is just like installing other WordPress plugins. If you don't know how to install plugins, please review the two options below:
 
-1. Activate the Plugin from Plugins page.
+Install by Search
 
-You will find 'scrollup-master' menu in your WordPress Settings panel. You can change default settings from here.
+* From your WordPress dashboard, choose 'Add New' under the 'Plugins' category.
+* Search for 'sis-nicescroll' a plugin will come called 'WordPress Nicescroll' and Click 'Install Now' and confirm your installation by clicking 'ok'
+* The plugin will download and install. Just click 'Activate Plugin' to activate it.
+
+Install by ZIP File
+
+* From your WordPress dashboard, choose 'Add New' under the 'Plugins' category.
+* Select 'Upload' from the set of links at the top of the page (the second link)
+* From here, browse for the zip file included in your plugin titled 'sis-nicescroll.zip' and click the 'Install Now' button
+* Once installation is complete, activate the plugin to enable its features.
+
+Install by FTP
+
+* Find the directory titles 'sis-nicescroll' and upload it and all files within to the plugins directory of your WordPress install (WORDPRESS-DIRECTORY/wp-content/plugins/) [e.g. www.yourdomain.com/wp-content/plugins/]
+* From your WordPress dashboard, choose 'Installed Plugins' option under the 'Plugins' category
+* Locate the newly added plugin and click on the \'Activate\' link to enable its features.
+
 
 == Frequently Asked Questions ==
 Do you have questions or issues with scrollup-master? [Ask for support here](http://wordpress.org/support/plugin/scrollup-master)
 
 == Screenshots ==
 
-1. Screenshot-1
-1. Screenshot-2
-1. Screenshot-3
+1. Screenshot of plugin option page.
+1. Screenshot of "scroll to top" button.
 
 == Changelog ==
 
