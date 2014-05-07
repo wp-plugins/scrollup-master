@@ -1,4 +1,4 @@
-=== scrollup-master ===
+=== SIS Scroll to Top ===
 Contributors: sayful
 Tags:  scroll to top, arrow, navigation, scroll up, top, scrollup-master, back to top
 Requires at least: 2.9
