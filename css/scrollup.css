@@ -1,6 +1,0 @@
-/* Image style */
-#scrollUp {
-	background: url(../img/back-top.png) no-repeat;
-	opacity: 0.3;
-}
-#scrollUp:hover{opacity: 1;}
