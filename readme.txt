@@ -7,11 +7,11 @@ Stable tag: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This is just a very simple plugin to have a unified "scroll to top" button throughout your whole blog. Juste install the plugin a "scroll to top" button will appear at right bottom of your blog.
+This is just a very simple plugin to have a unified "scroll to top" button throughout your whole blog/site.
 
 == Description ==
 
-Fully written in jQuery, the plugin adds a floating navigation button right bottom in the footer of your site that only appears when you scroll the page down, and when clicked gently roll the site to the top. All this without any modification to your template.
+Fully written in jQuery and jQuery UI, the plugin adds a floating navigation button right bottom in the footer of your site that only appears when you scroll the page down, and when clicked gently roll the site to the top. All this without any modification to your template.
 
 == Installation ==
 
