@@ -3,7 +3,7 @@
 Plugin Name: SIS Scroll to Top
 Plugin URI: http://wordpress.org/plugins/scrollup-master/
 Description: This plugin is for wordpress to create scroll to top button.
-Version: 2.4
+Version: 2.5
 Author: Sayful Islam
 Author URI: http://sis.netai.net
 License: GPLv2 or later
@@ -21,6 +21,11 @@ function sis_scrooltotop_check_WP_ver()
       	'scrolldistance' => '300',
       	'animation' => 'fade',
       	'btn_type' => 'image',
+      	'tab_txt_color' => '#828282',
+      	'tab_bg_color' => '#E6E6E6',
+      	'pill_txt_color' => '#fff',
+      	'pill_bg_color' => '#555',
+      	'pill_bghover_color' => '#000',
     );
 	if ( get_option( 'sis_scrooltotop_settings' ) !== false ) {
 		// The option already exists, so we just update it.
@@ -53,6 +58,12 @@ function scrollup_plugin_scripts() {
 }
 add_action('init', 'scrollup_plugin_scripts');
 
+function scrollup_color_picker( $hook_suffix ) {
+    // first check that $hook_suffix is appropriate for your admin page
+    wp_enqueue_style( 'wp-color-picker' );
+    wp_enqueue_script( 'scrollup_color_script', plugins_url('/js/main.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
+}
+add_action( 'admin_enqueue_scripts', 'scrollup_color_picker' );
 
 function scrollup_active_hook() {
 	$options = get_option( 'sis_scrooltotop_settings' );

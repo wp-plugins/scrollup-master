@@ -90,7 +90,58 @@
 								<option value="link" <?php selected( $options['btn_type'], 'link' ); ?>>link</option>
 							</select>
 
-							<p class="description"><?php _e('') ?></p>
+							<p class="description"><?php _e('Select button type.') ?></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<th scope="row">
+							<label for=""><?php _e('Tab Text Color') ?></label>
+						</th>
+						<td>
+							<input type="text" id="tab_txt_color" name="sis_scrooltotop_settings[tab_txt_color]" id="" value="<?php esc_attr_e($options['tab_txt_color']); ?>">
+
+							<p class="description"><?php _e('Select tab text color. This option will only work when your select scrollup button type as tab.') ?></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<th scope="row">
+							<label for=""><?php _e('Tab Background Color') ?></label>
+						</th>
+						<td>
+							<input type="text" id="tab_bg_color" name="sis_scrooltotop_settings[tab_bg_color]" id="" value="<?php esc_attr_e($options['tab_bg_color']); ?>">
+
+							<p class="description"><?php _e('Select tab background color. This option will only work when your select scrollup button type as tab.') ?></p>
+						</td>
+					</tr>
+
+					<tr valign="top">
+						<th scope="row">
+							<label for=""><?php _e('Pill Text Color') ?></label>
+						</th>
+						<td>
+							<input type="text" id="pill_txt_color" name="sis_scrooltotop_settings[pill_txt_color]" id="" value="<?php esc_attr_e($options['pill_txt_color']); ?>">
+
+							<p class="description"><?php _e('Select pill text color. This option will only work when your select scrollup button type as pill.') ?></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<th scope="row">
+							<label for=""><?php _e('Pill Background Color') ?></label>
+						</th>
+						<td>
+							<input type="text" id="pill_bg_color" name="sis_scrooltotop_settings[pill_bg_color]" id="" value="<?php esc_attr_e($options['pill_bg_color']); ?>">
+
+							<p class="description"><?php _e('Select pill background color. This option will only work when your select scrollup button type as pill.') ?></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<th scope="row">
+							<label for=""><?php _e('Pill Background Color on Hover') ?></label>
+						</th>
+						<td>
+							<input type="text" id="pill_bghover_color" name="sis_scrooltotop_settings[pill_bghover_color]" id="" value="<?php esc_attr_e($options['pill_bghover_color']); ?>">
+
+							<p class="description"><?php _e('Select pill background color on hover. This option will only work when your select scrollup button type as pill.') ?></p>
 						</td>
 					</tr>
 				</tbody>

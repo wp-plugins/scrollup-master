@@ -3,7 +3,7 @@ Contributors: sayful
 Tags:  scroll to top, arrow, navigation, scroll up, top, scrollup-master, back to top
 Requires at least: 2.9
 Tested up to: 3.9
-Stable tag: 2.4
+Stable tag: 2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,9 @@ Do you have questions or issues with SIS Scroll to Top? [Ask for support here](h
 1. Screenshot of "scroll to top" button.
 
 == Changelog 
+
+= version 2.5 =
+* Added color changing options for button
 
 = version 2.4 =
 * Fix bug on Easing Effect
