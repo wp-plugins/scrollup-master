@@ -50,6 +50,7 @@ Do you have questions or issues with SIS Scroll to Top? [Ask for support here](h
 = version 2.4 =
 * Fix bug on Easing Effect
 * Fix bug on Scrollup Button Animations
+* Added three new button type
 
 = version 2.3 =
 * Redesign with modern WordPress code
