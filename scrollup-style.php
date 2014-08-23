@@ -25,7 +25,7 @@ function scrollup_custom_style(){
 		?><style>
 			#scrollUp {
 			    bottom: 0;
-			    right: 30px;
+			    right: <?php echo $options['btn_right']; ?>;
 			    width: 70px;
 			    height: 70px;
 			    margin-bottom: -10px;
@@ -33,15 +33,12 @@ function scrollup_custom_style(){
 			    font: 14px/20px sans-serif;
 			    text-align: center;
 			    text-decoration: none;
-			    text-shadow: 0 1px 0 #fff;
-			    color: #828282;
 			    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-			    background-color: #E6E6E6;
-			    background-image: linear-gradient(to bottom, #EBEBEB, #DEDEDE);
 			    background-repeat: repeat-x;
 			    transition: margin-bottom 150ms linear;
+			    color: <?php echo $options['tab_txt_color']; ?>;
+			    background-color: <?php echo $options['tab_bg_color']; ?>;
 			}
-
 			#scrollUp:hover {
 			    margin-bottom: 0;
 			}
@@ -54,10 +51,10 @@ function scrollup_custom_style(){
 
 		?><style>
 			#scrollUp {
-			    bottom: 20px;
-			    right: 20px;
-			    background-color: #555;
-			    color: #fff;
+			    background-color: <?php echo $options['pill_bg_color']; ?>;
+			    color: <?php echo $options['pill_txt_color']; ?>;
+			    right: <?php echo $options['btn_right']; ?>;
+			    bottom: <?php echo $options['btn_bottom']; ?>;
 			    font-size: 12px;
 			    font-family: sans-serif;
 			    text-decoration: none;
@@ -74,7 +71,7 @@ function scrollup_custom_style(){
 			}
 
 			#scrollUp:hover {
-			    background-color: #000;
+			    background-color: <?php echo $options['pill_bghover_color']; ?>;
 			}
 		</style><?php
 
@@ -85,8 +82,8 @@ function scrollup_custom_style(){
 
 		?><style>
 			#scrollUp {
-			    bottom: 20px;
-			    right: 20px;
+			    bottom: <?php echo $options['btn_bottom']; ?>;
+			    right: <?php echo $options['btn_right']; ?>;
 			}
 		</style><?php
 
